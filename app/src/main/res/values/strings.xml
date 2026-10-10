@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">苏锦浩 2024110737</string>
+    <string name="add_textview">添加消息</string>
+    <string name="new_tv_prefix">新消息：</string>
+    <string name="select_language">新语言</string>
+    <string name="confirm">确定</string>
+    <string name="lang_apple">苹果</string>
+    <string name="lang_banana">香蕉</string>
+    <string name="lang_panappl">菠萝</string>
+</resources>

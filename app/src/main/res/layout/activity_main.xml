@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 功能区1：添加TextView的按钮 -->
+    <Button
+        android:id="@+id/Button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/add_textview" />
+
+    <!-- 功能区1滚动容器：ScrollView实现滚动，内部嵌套LinearLayout用来动态添加TextView -->
+
+    <!-- 功能区2 MVC模块，绿色背景 -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#00cccc">
+
+        <!-- 容器，Kotlin代码往这里动态添加TextView -->
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout> <!-- 补上闭合标签！ -->
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#00ff00"
+        android:orientation="vertical">
+
+        <!-- 下拉选择框 -->
+        <Spinner
+            android:id="@+id/Spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="78dp"
+            android:hint="@string/select_language" />
+
+        <!-- 查询按钮 -->
+        <Button
+            android:id="@+id/Button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/confirm" />
+
+        <!-- 展示MVC查询结果的文本 -->
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
